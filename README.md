@@ -20,13 +20,13 @@
   </p>
 </p>
 
-Vulhub is an open-source collection of pre-built vulnerable docker environments. No pre-existing knowledge of docker is required, just execute two simple commands and you have a vulnerable environment.
+Vulhub es una colección de código abierto de entornos de Docker vulnerables prediseñados. No se requieren conocimientos previos de Docker, simplemente ejecutar dos comandos simples y tendrá un entorno vulnerable. Este repositorio se ha creado a partir de un fork del original https://github.com/vulhub/vulhub
 
-[中文版本(Chinese version)](README.zh-cn.md)
+[中文版本(Version China)](README.zh-cn.md)
 
-## Installation
+## Instalación
 
-Install the docker/docker-compose on Ubuntu 20.04:
+Instalar el docker/docker-compose en Ubuntu 20.04:
 
 ```bash
 # Install pip
@@ -42,9 +42,9 @@ systemctl start docker
 pip install docker-compose
 ```
 
-The installation steps of docker and docker-compose for other operating systems might be slightly different, please refer to the [docker documentation](https://docs.docker.com/) for details.
+Los pasos de instalación de docker y docker-compose para otros sistemas operativos pueden ser ligeramente diferentes, consulte la [documentación de docker] (https://docs.docker.com/) para obtener más detalles.
 
-## Usage
+## Uso
 
 ```bash
 # Download project
@@ -62,42 +62,43 @@ docker-compose build
 docker-compose up -d
 ```
 
-There is a **README** document in each environment directory, please read this file for vulnerability/environment testing and usage.
+Hay un documento ** README ** en cada directorio de entorno; lea este archivo para conocer las pruebas y el uso de vulnerabilidades / entornos.
 
-After the test, delete the environment with the following command.
+Después de la prueba, elimine el entorno con el siguiente comando.
 
 ```
 docker-compose down -v
 ```
 
-It is recommended to use a VPS of at least 1GB memory to build a vulnerability environment. The `your-ip` mentioned in the documentation refers to the IP address of your VPS. If you are using a virtual machine, it refers to your virtual machine IP, not the IP inside the docker container.
+Se recomienda utilizar un VPS de al menos 1 GB de memoria para crear un entorno de vulnerabilidad. El `your-ip` mencionado en la documentación se refiere a la dirección IP de su VPS. Si está utilizando una máquina virtual, se refiere a la IP de su máquina virtual, no a la IP dentro del contenedor de la ventana acoplable
 
-**All environments in this project are for testing purposes only and should not be used as a production environment!**
+**¡Todos los entornos de este proyecto son solo para fines de prueba y no deben utilizarse como entorno de producción!**
 
-## Notice
+## Aviso
 
-1. To prevent permission errors, it is best to use the root user to execute the docker and docker-compose commands.
-2. Some docker images do not support running on ARM machines.
+1. Para evitar errores de permisos, es mejor utilizar el usuario root para ejecutar los comandos docker y docker-compose.
+2. Algunas imágenes de la ventana acoplable no admiten la ejecución en máquinas ARM.
 
-## Contribution
+## Contribución
 
-This project relies on docker. So any error during compilation and running are thrown by docker and related programs. Please find the cause of the error by yourself first. If it is determined that the dockerfile is written incorrectly (or the code is wrong in vulhub), then submit the issue. More details please 👉[Common reasons for compilation failure](https://github.com/phith0n/vulhub/wiki/%E7%BC%96%E8%AF%91%E5%A4%B1%E8%B4%A5%E7%9A%84%E5%8E%9F%E5%9B%A0), hope it can help you.
+Este proyecto se basa en docker. Por lo tanto, cualquier error durante la compilación y la ejecución lo arroja la ventana acoplable y los programas relacionados. Primero, busque usted mismo la causa del error. Si se determina que el dockerfile está escrito incorrectamente (o el código es incorrecto en vulhub), envíe el problema. Más detalles, por favor 👉 [Razones comunes para fallas en la compilación] (https://github.com/phith0n/vulhub/wiki/%E7%BC%96%E8%AF%91%E5%A4%B1%E8%B4%A5%E7%9A%84%E5%8E%9F%E5%9B%A0), espero que pueda ayudarte.
 
-For more question, please contact:
+Si tiene más preguntas, comuníquese con:
 
 - [Chinese Community](https://www.wangan.com/vulhub)
 - [Discord](https://discord.gg/GhMB3Z)
 - [Twitter](https://twitter.com/vulhub)
 
-Thanks for the following contributors:
+
+Gracias a los siguientes contribuyentes:
 
 [![](https://opencollective.com/vulhub/contributors.svg?width=890&button=false)](https://github.com/vulhub/vulhub/graphs/contributors)
 
-More contributors：[Contributors List](contributors.md)
+Más contribuyentes：[Contributors List](contributors.md)
 
-## Partner
+## Socios
 
-Our Partners and users:
+Nuestros socios y usuarios:
 
 <p>
   <a href="https://www.wangan.com/vulhub" target="_blank"><img src="https://vulhub.org/img/sponsor/wangan.png" width="200"></a>
@@ -107,19 +108,20 @@ Our Partners and users:
   <a href="https://xianzhi.aliyun.com/" target="_blank"><img src="https://vulhub.org/img/sponsor/aliyun.svg" width="200"></a>
 </p>
 
-Sponsor vulhub on patreon 🙏
+Patrocinador vulhub en patreon 🙏
 
 <a href="https://www.patreon.com/bePatron?u=12677520"><img src="https://vulhub.org/img/sponsor/patreon.png" width="150"></a>
 
-Sponsor vulhub on opencollective 🙏
+Patrocinador vulhub en opencollective 🙏
 
 <p>
   <a href="https://opencollective.com/vulhub#backer"><img src="https://opencollective.com/vulhub/backers.svg?width=138"></a>
   <a href="https://opencollective.com/vulhub#sponsor"><img src="https://opencollective.com/vulhub/sponsors.svg?width=138"></a>
 </p>
 
-More [Donate](http://vulhub.org/#/docs/donate/).
+Más [Donate](http://vulhub.org/#/docs/donate/).
 
-## License
+## Licencia
 
-Vulhub is licensed under the MIT License. See [LICENSE](LICENSE) for the full license text.
+
+Vulhub tiene la licencia MIT. Ver [LICENSE](LICENSE) para obtener el texto completo de la licencia.
